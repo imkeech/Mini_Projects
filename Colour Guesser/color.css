@@ -1,0 +1,38 @@
+#container
+{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 40px;
+}
+button
+{
+    border-radius: 20px;
+    height: 25px;
+    width: 60px;
+    justify-content: center;
+    border-width: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#whole
+{
+    display: flex;
+    margin-left: 20px;
+}
+#display
+{
+    padding-left:50px;
+    padding-top:30px ;
+}
+#ans_1
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size:35px;
+}
+#ans
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size:35px;
+    font-style: italic;
+    font-display:initial;
+}

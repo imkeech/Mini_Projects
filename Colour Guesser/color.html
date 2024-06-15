@@ -1,0 +1,41 @@
+
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    body{
+        background-color: black;
+        color: whitesmoke;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6" style="padding: 5%;">
+
+                <input type="button" class="btn btn-success" style="margin-left: 15%;" onclick="Color()" value="START">
+                <br><br>
+                <div id="whole" style="width:100%">
+                    <div id="container" style="border: 1px solid white;">
+                    </div>
+                    <br><br>
+                    <div id="display">
+                        <p>Choose Any Options:</p>
+                        <p><strong>Option_A: </strong><span id="clr_5" onclick="check(this);"></span></p>
+                        <p><strong>Option_B: </strong><span id="clr_4" onclick="check(this);"></span></p>
+                        <p><strong>Option_C: </strong><span id="clr_3" onclick="check(this);"></span></p>
+                        <p><strong>Option_D: </strong><span id="clr_2" onclick="check(this);"></span></p>
+                        <p id="ans_1">Result:<span id="ans"></span></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-3"></div>
+</div>
+</div>
+</body>
+<script src="color.js"></script>
