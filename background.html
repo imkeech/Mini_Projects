@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Background colour changing</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        text-align: center;
+        margin-top: 20%;
+    }
+</style>
+<body>
+    <button class="btn btn-outline-danger" onclick="red()">Red</button>
+    <button class="btn btn-outline-dark" onclick="black()">Black</button>
+    <button class="btn btn-outline-success" onclick="green()">Green</button>
+    <button class="btn btn-outline-primary" onclick="purple()">Blue</button>
+
+    <script>
+        function green(){
+        document.body.style.backgroundColor= "green";
+        }
+        function red(){
+        document.body.style.backgroundColor= "red";
+        }
+        function black(){
+        document.body.style.backgroundColor= "black";
+        }
+        function purple(){
+        document.body.style.backgroundColor= "blue";
+        }
+
+    </script>
+</body>
+</html>

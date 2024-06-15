@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>COUNTER</title>
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+   
+    </head>
+         <h1 style="text-align: center; padding-top: 10%;">Counter application</h1>
+         <style>
+            #label{
+    display:block;
+    text-align: center;
+    font-size: 50px;
+}
+
+#btn{
+     text-align: center;
+}
+         </style>
+    <body>
+        <div class="buttons" id="btn">
+        <label id="label">0</label><br>
+        <button class="btn btn-success" id="Increment">Increment</button>
+        <button class="btn btn-danger" id="Decrement">Decrement</button>
+        <button class="btn btn-dark" id="Reset">Reset</button>
+     </div>
+     <script>
+        let count=0;
+document.getElementById("Increment").onclick=function()
+{ count+=1;
+  document.getElementById("label").innerHTML=count;}
+document.getElementById("Decrement").onclick=function()
+{ count-=1;
+  document.getElementById("label").innerHTML=count;}
+document.getElementById("Reset").onclick=function()
+{ count=0;
+  document.getElementById("label").innerHTML=count;}
+     </script>
+
+    </body>
+    </html>
